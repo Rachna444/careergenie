@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Brain, Target, BarChart, Briefcase, ArrowRight, UploadCloud, Zap, CheckCircle, Sparkles, TrendingUp, Users } from 'lucide-react';
+import { Brain, Target, BarChart, Briefcase, ArrowRight, UploadCloud, Zap, CheckCircle, Sparkles, TrendingUp, Users, FileText } from 'lucide-react';
 
 const Landing = () => {
   return (
@@ -46,28 +46,34 @@ const Landing = () => {
                 </Link>
               </div>
 
-              {/* Animated Stats Cards */}
-              <div className="grid grid-cols-3 gap-4 pt-8 border-t border-slate-200/60">
-                <div className="space-y-1 hover:translate-y-[-2px] transition-transform duration-200">
-                  <div className="flex items-center gap-1.5 text-indigo-600">
-                    <Zap className="h-4 w-4" />
-                    <span className="text-2xl sm:text-3xl font-extrabold font-display text-slate-900">15k+</span>
+              {/* Feature Highlights */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-200/60">
+                <div className="space-y-2 hover:translate-y-[-2px] transition-transform duration-200">
+                  <div className="flex items-center gap-2 text-indigo-600">
+                    <div className="p-1 rounded-lg bg-indigo-50">
+                      <FileText className="h-4 w-4" />
+                    </div>
+                    <span className="text-sm sm:text-base font-bold font-display text-slate-900">ATS Resume Analysis</span>
                   </div>
-                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Resumes Scored</p>
+                  <p className="text-xs text-slate-500 leading-relaxed">Get instant ATS compatibility feedback</p>
                 </div>
-                <div className="space-y-1 hover:translate-y-[-2px] transition-transform duration-200">
-                  <div className="flex items-center gap-1.5 text-emerald-600">
-                    <TrendingUp className="h-4 w-4" />
-                    <span className="text-2xl sm:text-3xl font-extrabold font-display text-slate-900">92%</span>
+                <div className="space-y-2 hover:translate-y-[-2px] transition-transform duration-200">
+                  <div className="flex items-center gap-2 text-emerald-600">
+                    <div className="p-1 rounded-lg bg-emerald-50">
+                      <Brain className="h-4 w-4" />
+                    </div>
+                    <span className="text-sm sm:text-base font-bold font-display text-slate-900">AI Career Matching</span>
                   </div>
-                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Placement Rate</p>
+                  <p className="text-xs text-slate-500 leading-relaxed">Match opportunities based on skills and profile</p>
                 </div>
-                <div className="space-y-1 hover:translate-y-[-2px] transition-transform duration-200">
-                  <div className="flex items-center gap-1.5 text-sky-600">
-                    <Users className="h-4 w-4" />
-                    <span className="text-2xl sm:text-3xl font-extrabold font-display text-slate-900">450+</span>
+                <div className="space-y-2 hover:translate-y-[-2px] transition-transform duration-200">
+                  <div className="flex items-center gap-2 text-sky-600">
+                    <div className="p-1 rounded-lg bg-sky-50">
+                      <Target className="h-4 w-4" />
+                    </div>
+                    <span className="text-sm sm:text-base font-bold font-display text-slate-900">Smart Job Recommendations</span>
                   </div>
-                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Active Recruiters</p>
+                  <p className="text-xs text-slate-500 leading-relaxed">Discover relevant internships and jobs</p>
                 </div>
               </div>
             </div>
